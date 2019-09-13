@@ -1,0 +1,6 @@
+.jumbotron {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #444656 0%, #182140 100%);
+}

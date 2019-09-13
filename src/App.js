@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Text from './text.js'
+import Home from './pages/home.js';
 
 function App() {
   return (
     <>
-    <Text />
+      <Home />
     </>
   );
 }
