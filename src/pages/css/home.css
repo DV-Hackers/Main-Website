@@ -2,5 +2,47 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, #444656 0%, #182140 100%);
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #000000, #0f9b0f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #000000, #0f9b0f);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    z-index: -1;
+    font-size: 1.5em;
+}
+
+#center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  margin-top: 40vh;
+  color: black;
+  font-size: 2em
+}
+
+#tagline {
+  font-size: .5em;
+}
+
+#timer-wrapper {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 1;
+  right: 0;
+  bottom: 1vh;
+  color: green;
+}
+
+
+/*////navbar////*/
+#navbrand {
+  height: 7vh;
+}
+
+#navbar > .NavItem {
+  width: 10vw;
 }
