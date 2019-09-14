@@ -2,14 +2,13 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #000000, #0f9b0f); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #000000, #0f9b0f);
+    background: linear-gradient(180deg, #444656 0%, #182140 100%);
     display: flex;
     flex-direction: column;
     align-content: center;
     z-index: -1;
     font-size: 1.5em;
+    font-family: monospace;
 }
 
 #center-wrapper {
@@ -18,7 +17,7 @@
   align-items: center;
   height: 10vh;
   margin-top: 40vh;
-  color: black;
+  color: green;
   font-size: 2em
 }
 
@@ -37,12 +36,22 @@
   color: green;
 }
 
-
 /*////navbar////*/
-#navbrand {
-  height: 7vh;
+
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
 }
 
-#navbar > .NavItem {
-  width: 10vw;
+@media (max-width: 1024px) {
+  .navbar-collapse > #nav-items {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+#navbrand {
+  height: 7vh;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+// WILL CHANGE SIZE IF NOT USING MONOSPACE FONT
 export default class Timer extends React.Component {
   constructor(props) {
     super(props)
@@ -19,7 +20,7 @@ export default class Timer extends React.Component {
 
   render() {
     return (
-      <div>{this.state.days}:{this.state.hours}:{this.state.minutes}:{this.state.seconds}</div>
+      <div id='timer'>{this.state.days}:{this.state.hours}:{this.state.minutes}:{this.state.seconds}</div>
     )
   }
 
