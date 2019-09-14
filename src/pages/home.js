@@ -50,10 +50,6 @@ class Home extends React.Component {
       </Jumbotron>
     );
   }
-
-  componentDidMount() {
-    setTimeout(this.fadeIn, 3000)
-  }
 }
 
 export default Home;
