@@ -29,8 +29,8 @@ class Home extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav id='nav-items' className='ml-auto' navbar>
               <NavItem><NavLink href='#home'>Home</NavLink></NavItem>
+              <NavItem><NavLink href='#team-page'>Team</NavLink></NavItem>
               <NavItem><NavLink href='#about'>About</NavLink></NavItem>
-              <NavItem><NavLink href='#team'>Team</NavLink></NavItem>
               <NavItem><NavLink href='#contact'>Contact</NavLink></NavItem>
             </Nav>
             </Collapse>

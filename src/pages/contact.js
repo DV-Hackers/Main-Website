@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/contact.css'
+import { Container, Row } from 'reactstrap'
 
 class Contact extends React.Component {
     constructor(props) {
@@ -9,7 +10,11 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact-bg" id={this.props.to}>
-                Contact Us
+                <Container>
+                    <Row>
+                        Contact Us
+                    </Row>
+                </Container>
             </div>
         );
     }

@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Home to="home"/>
-      <Team to="team"/>
+      <Team to="team-page"/>
       <About to="about"/>    
       <Contact to="contact"/>  
     </>
