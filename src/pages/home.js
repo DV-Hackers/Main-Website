@@ -22,16 +22,16 @@ class Home extends React.Component {
 
   render () {
     return (
-        <Jumbotron id='landing-page'>
+        <Jumbotron fluid id={this.props.to}>
           <Navbar id='navbar' expand='lg' fixed='top' dark>
             <NavbarBrand href='/home/'><img id='navbrand' src={require('./img/logo.png')} alt='DVHackers'/></NavbarBrand>
             <NavbarToggler onClick={this.toggle}/>
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav id='nav-items' className='ml-auto' navbar>
-              <NavItem><NavLink href='#landing-page'>Home</NavLink></NavItem>
-              <NavItem><NavLink href='About'>About</NavLink></NavItem>
-              <NavItem><NavLink href='#team-page'>Team</NavLink></NavItem>
-              <NavItem><NavLink href='/contact/'>Contact</NavLink></NavItem>
+              <NavItem><NavLink href='#home'>Home</NavLink></NavItem>
+              <NavItem><NavLink href='#about'>About</NavLink></NavItem>
+              <NavItem><NavLink href='#team'>Team</NavLink></NavItem>
+              <NavItem><NavLink href='#contact'>Contact</NavLink></NavItem>
             </Nav>
             </Collapse>
           </Navbar>
