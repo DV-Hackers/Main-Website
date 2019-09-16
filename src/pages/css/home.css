@@ -1,15 +1,4 @@
-.jumbotron {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(180deg, #444656 0%, #182140 100%);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    z-index: -1;
-    font-size: 1.5em;
-    font-family: monospace;
-}
+
 
 #center-wrapper {
   display: flex;

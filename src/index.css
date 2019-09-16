@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #182140;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  z-index: -2;
+}
+
+.jumbotron {
+  background: linear-gradient(180deg, #444656 0%, #182140 100%);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    z-index: -2;
+    font-size: 1.5em;
+    font-family: monospace;
+    margin-bottom: 0;
 }
