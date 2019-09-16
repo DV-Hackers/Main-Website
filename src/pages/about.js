@@ -1,8 +1,6 @@
 import React from 'react';
 import './css/about.css'
 
-import { Jumbotron } from 'reactstrap'
-
 class About extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +8,7 @@ class About extends React.Component {
     
     render() {
         return (
-            <div className="background">
+            <div className="about-bg" id={this.props.to}>
                 About Us
             </div>
         );
