@@ -27,10 +27,10 @@ export default class Team extends React.Component {
   constructor(props) {
     super(props);
   }
-  
+
   render() {
     return (
-      <div className="team-bg" id='team-page'>
+      <div className="team-bg section" id='team-page'>
         <Container className='section'>
           <Row className='title'>Our Officers</Row>
           <Row className='body'>{MemberList(members)}</Row>

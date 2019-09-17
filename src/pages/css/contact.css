@@ -1,7 +1,6 @@
 .contact-bg {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, #2c2e44 0%, #1e2a55 100%);
     align-content: center;
     z-index: -1;
     font-size: 1.5em;

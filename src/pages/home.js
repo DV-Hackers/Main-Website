@@ -22,7 +22,7 @@ class Home extends React.Component {
 
   render () {
     return (
-        <Jumbotron fluid id={this.props.to}>
+        <div id={this.props.to} class='section'>
           <Navbar id='navbar' expand='lg' fixed='top' dark>
             <NavbarBrand href='/home/'><img id='navbrand' src={require('./img/logo.png')} alt='DVHackers'/></NavbarBrand>
             <NavbarToggler onClick={this.toggle}/>
@@ -47,7 +47,7 @@ class Home extends React.Component {
             <Timer id='timer' date='September 16, 2019 18:30:00 PST' delay='90'/>
           </Col>
         </Fade>
-      </Jumbotron>
+      </div>
     );
   }
 }

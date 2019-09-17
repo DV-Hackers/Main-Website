@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #182140;
   scroll-behavior: smooth;
+  background: linear-gradient(180deg, #444656 0%, #182140 100%);
 }
 
 code {
@@ -18,8 +19,9 @@ code {
   z-index: -2;
 }
 
-.jumbotron {
-    background: linear-gradient(180deg, #444656 0%, #182140 100%);
+.section {
+    position: relative;
+
     min-width: 100vw;
     min-height: 100vh;
     display: flex;

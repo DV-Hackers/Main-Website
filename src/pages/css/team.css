@@ -1,17 +1,6 @@
-.team-bg {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(180deg, #182140 0%, #2c2e44 100%);
-    align-content: center;
-    z-index: -1;
-    font-size: 1.5em;
-    font-family: monospace;
-    color: rgb(163, 163, 163);
-    padding: 0 100px 0 100px;
-}
 
 #team-page {
-  background: #182140;
+
 }
 #team-page > .section {
   min-width: 100%;
