@@ -8,34 +8,13 @@ import { Jumbotron, Container, Navbar, NavbarBrand, Nav, NavbarToggler, NavItem,
 class Home extends React.Component {
   constructor(props) {
     super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
   }
 
   render () {
     return (
-        <div id={this.props.to} class='section'>
-          <Navbar id='navbar' expand='lg' fixed='top' dark>
-            <NavbarBrand href='/home/'><img id='navbrand' src={require('./img/logo.png')} alt='DVHackers'/></NavbarBrand>
-            <NavbarToggler onClick={this.toggle}/>
-            <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav id='nav-items' className='ml-auto' navbar>
-              <NavItem><NavLink href='#home'>Home</NavLink></NavItem>
-              <NavItem><NavLink href='#team-page'>Team</NavLink></NavItem>
-              <NavItem><NavLink href='#about'>About</NavLink></NavItem>
-              <NavItem><NavLink href='#contact'>Contact</NavLink></NavItem>
-            </Nav>
-            </Collapse>
-          </Navbar>
-
+      <>
+        <Navigation />
+        <div id={this.props.to} className='section'>
         <Col id='center-wrapper' sm="12" md={{ size: 6, offset: 3 }}>
           <Typed id='landing-typed' strings={['DVHackers']} typeSpeed={200}></Typed>
           <Fade id='tagline' in={true} timeout={3500}>Talk is cheap, show us the code.</Fade>
@@ -43,12 +22,67 @@ class Home extends React.Component {
 
         <Fade in={true} timeout={3500}>
           <Col id='timer-wrapper' sm={{ size: 'auto' }}>
-            <div id='timer-text'>Time until next meeting:&nbsp;</div>
-            <Timer id='timer' date='September 16, 2019 18:30:00 PST' delay='90'/>
+            <div id='timer-text'>Next Meeting In:&nbsp;</div>
+            <Timer id='timer' date='September 30, 2019 18:30:00 PST' delay='90'/>
           </Col>
         </Fade>
       </div>
+      </>
     );
+  }
+}
+
+class Navigation extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.handleEnter = this.handleEnter.bind(this);
+    this.handleLeave = this.handleLeave.bind(this);
+    this.state = {
+      isOpen: false,
+      currentScrollHeight: 1
+    };
+  }
+
+  componentDidMount() {
+    window.onscroll = () => {
+      this.setState({ currentScrollHeight: window.scrollY })
+    }
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
+  handleEnter() {
+    this.setState({ currentScrollHeight: 1});
+  }
+
+  handleLeave() {
+    this.setState({ currentScrollHeight: window.scrollY });
+  }
+
+
+  render() {
+    const opacity = Math.max(80 / this.state.currentScrollHeight, 0.2)
+
+    return (
+        <Navbar onMouseEnter={this.handleEnter} onMouseLeave={this.handleLeave} style={{ opacity: opacity }} id='navbar' expand='lg' fixed='top' dark>
+          <NavbarBrand href='/home/'><img id='navbrand' src={require('./img/logo.png')} alt='DVHackers' /></NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav id='nav-items' className='ml-auto' navbar>
+              <NavItem><NavLink href='#home'>Home</NavLink></NavItem>
+              <NavItem><NavLink href='#team-page'>Team</NavLink></NavItem>
+              <NavItem><NavLink href='#about'>About</NavLink></NavItem>
+              <NavItem><NavLink href='#contact'>Contact</NavLink></NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+    )
   }
 }
 

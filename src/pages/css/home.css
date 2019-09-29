@@ -35,9 +35,15 @@
   right: 0;
   bottom: 1vh;
   color: green;
+  font-size: 1.2em;
 }
 
 /*////navbar////*/
+
+#navbar {
+  font-family: monospace;
+  font-size: 1.5em;
+}
 
 #nav-items {
   display: flex;
