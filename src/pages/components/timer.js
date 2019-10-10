@@ -2,8 +2,11 @@ import React from 'react'
 
 function nextWeekDay(day, time) {
   var ret = new Date()
+  console.log(ret)
   ret.setDate(ret.getDate() + (day - 1 - ret.getDay() + 7) % 7 + 1)
+  console.log(ret)
   ret.setTime(ret.getTime() + time*3.6e+6)
+  console.log(ret)
   return ret
 }
 
