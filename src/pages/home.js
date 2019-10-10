@@ -23,7 +23,7 @@ class Home extends React.Component {
         <Fade in={true} timeout={3500}>
           <Col id='timer-wrapper' sm={{ size: 'auto' }}>
             <div id='timer-text'>Next Meeting In:&nbsp;</div>
-            <Timer id='timer' date='September 30, 2019 18:30:00 PST' delay='90'/>
+            <Timer id='timer' day='1' time='18.5' delay='90'/>
           </Col>
         </Fade>
       </div>

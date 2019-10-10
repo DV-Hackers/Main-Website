@@ -1,5 +1,12 @@
 import React from 'react'
 
+function nextWeekDay(day, time) {
+  var ret = new Date()
+  ret.setDate(ret.getDate() + (day - 1 - ret.getDay() + 7) % 7 + 1)
+  ret.setTime(ret.getTime() + time*3.6e+6)
+  return ret
+}
+
 // WILL CHANGE SIZE IF NOT USING MONOSPACE FONT
 export default class Timer extends React.Component {
   constructor(props) {
@@ -13,7 +20,7 @@ export default class Timer extends React.Component {
 
     // seconds per week
     this.secondsPerPeriod = 604800
-    this.secondsRemaining = Math.floor((Date.parse(this.props.date) - Date.now()) / 1000)
+    this.secondsRemaining = Math.floor((nextWeekDay(parseFloat(this.props.day), parseFloat(this.props.time)) - Date.now()) / 1000)
     console.log(this.secondsRemaining)
     this.tick = this.tick.bind(this)
   }
