@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #182140;
+  background: black/*#182140*/;
   scroll-behavior: smooth;
 }
 
@@ -19,7 +19,7 @@ code {
 }
 
 .jumbotron {
-    background: linear-gradient(180deg, #444656 0%, #182140 100%);
+    background: black/*linear-gradient(180deg, #444656 0%, #182140 100%)*/;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -30,3 +30,5 @@ code {
     font-family: monospace;
     margin-bottom: 0;
 }
+
+
