@@ -16,9 +16,7 @@ var members = [{ "name": "Can Koz", "position": "President", "email": "canxkoz@g
 
 function MemberList(members) {
   var jsx = []
-  console.log(members)
   for (let member of members) {
-    console.log(member)
     jsx.push(<Card data={member} />)
   }
 
@@ -32,13 +30,11 @@ export default class Team extends React.Component {
 
   render() {
     return (
-      <div className="team-bg section" id='team-page'>
-        <Container className='section'>
+      <div className="section" id='team'>
           <Row className='title'>Our Officers</Row>
           <Row className='row1'>{MemberList(members.slice(0,2))}</Row>
           <Row className='row2'>{MemberList(members.slice(2,5))}</Row>
           <Row className='row1'>{MemberList(members.slice(5,8))}</Row>
-        </Container>
       </div>
     )
   }

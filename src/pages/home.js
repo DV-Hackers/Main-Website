@@ -22,16 +22,17 @@ class Home extends React.Component {
 
   render () {
     return (
-        <Jumbotron fluid id={this.props.to}>
-          <Navbar id='navbar' expand='lg' fixed='top' dark>
+        <div id={this.props.to}>
+          <Navbar id='navbar' expand='lg' fixed='top' >
             <NavbarBrand href='/home/'><img id='navbrand' src={require('./img/logo.png')} alt='DVHackers'/></NavbarBrand>
-            <NavbarToggler onClick={this.toggle}/>
+            <NavbarToggler onClick={this.toggle} className="navbar-dark"/>
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav id='nav-items' className='ml-auto' navbar>
               <NavItem><NavLink href='#home'>Home</NavLink></NavItem>
               <NavItem><NavLink href='#about'>About</NavLink></NavItem>
               <NavItem><NavLink href='#team'>Team</NavLink></NavItem>
               <NavItem><NavLink href='#contact'>Contact</NavLink></NavItem>
+              <NavItem><NavLink href="https://docs.google.com/document/d/1yOUVi6mwTw6wB9YWs2LWQDxFWilNm3MVE500RU_8Buw/edit?usp=sharing">Meetings</NavLink></NavItem>
             </Nav>
             </Collapse>
           </Navbar>
@@ -44,10 +45,10 @@ class Home extends React.Component {
         <Fade in={true} timeout={3500}>
           <Col id='timer-wrapper' sm={{ size: 'auto' }}>
             <div id='timer-text'>Time until next meeting:&nbsp;</div>
-            <Timer id='timer' date='September 16, 2019 18:30:00 PST' delay='90'/>
+            <Timer id='timer' day="1" time="1830" date='September 16, 2019 18:30:00 PST' delay='90'/>
           </Col>
         </Fade>
-      </Jumbotron>
+      </div>
     );
   }
 }

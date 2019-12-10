@@ -1,10 +1,36 @@
-.about-bg {
-    width: 100vw;
-    height: 100vh;
-    background: black/*linear-gradient(180deg, #182140 0%, #2c2e44 100%)*/;
-    align-content: center;
-    z-index: -1;
-    font-size: 1.5em;
+#about {
     font-family: monospace;
-    color: rgb(163, 163, 163);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
+
+#about > #body {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    padding-top: 3vh;
+}
+
+#about > #body > #description {
+    padding-right: 3vw;
+}
+
+@media (max-width: 1400px) {
+    #about > #body {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 610px) {
+    #about > #body > img {
+        width: 90vw;
+    }
+}
+

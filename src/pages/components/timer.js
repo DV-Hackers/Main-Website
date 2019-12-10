@@ -1,5 +1,16 @@
 import React from 'react'
 
+/**
+ * params
+ * date [JS Date()]
+ * day_in_week [int] 1 (Mon) - 7 (Sun)
+ */
+function nextWeekdayDate(date, day_in_week) {
+  var ret = new Date(date||new Date())
+  ret.setDate(ret.getDate() + (day_in_week - 1 - ret.getDay() + 7) % 7 + 1)
+  return ret
+}
+
 // WILL CHANGE SIZE IF NOT USING MONOSPACE FONT
 export default class Timer extends React.Component {
   constructor(props) {
@@ -10,11 +21,14 @@ export default class Timer extends React.Component {
       minutes: '',
       seconds: ''
     }
+    this.day = Number(props.day)
 
-    // seconds per week
-    this.secondsPerPeriod = 604800
-    this.secondsRemaining = Math.floor((Date.parse(this.props.date) - Date.now()) / 1000)
-    console.log(this.secondsRemaining)
+    var date = new Date()
+    date.setHours(Number(props.time.slice(0, 2)))
+    date.setMinutes(Number(props.time.slice(2)))
+    date.setSeconds(0)
+    date = nextWeekdayDate(date, Number(props.day))
+    this.secondsRemaining = Math.floor((date - (new Date())) / 1000)
     this.tick = this.tick.bind(this)
   }
 
@@ -36,12 +50,12 @@ export default class Timer extends React.Component {
     this.secondsRemaining--
 
     var d, h, m, s;
-    if (this.secondsRemaining == 0) {
+    if (this.secondsRemaining <= 0) {
       d = 7
       h = 0
       m = 0
       s = 0
-      this.secondsRemaining = this.secondsPerPeriod
+      this.secondsRemaining = Math.floor((nextWeekdayDate(new Date(), this.day) - new Date()) / 1000)
     }
     else {
       var d = Math.floor(this.secondsRemaining / 86400)
