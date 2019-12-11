@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #819e78;
   scroll-behavior: smooth;
-  background: linear-gradient(180deg, #444656 0%, #182140 100%);
 }
 
 code {
@@ -61,9 +60,13 @@ code {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1050px) {
     .section {
         height: auto;
+    }
+
+    #nav-items {
+        width: 45%;
     }
 }
 
