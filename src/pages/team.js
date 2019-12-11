@@ -19,7 +19,6 @@ var members = [{ "name": "Can Koz", "position": "President", "email": "canxkoz@g
 { "name": "Umid Muradli", "position": "Secretary", "email": "umid.murad@hotmail.com", "github": "https://github.com/umidmurad", "linkedin": "https://www.linkedin.com/in/umid-muradli-a0b22913b", "img": umidImg },
 { "name": "Omar Ahmadieh", "position": "Officer", "email": "omarelahmadieh@hotmail.com", "img": omarImg },
 { "name": "Peter Aleman", "position": "Officer", "email": "paleman982@insite.4cd.edu", "img": avatarImg },
-
 ]
 
 function MemberList(members) {

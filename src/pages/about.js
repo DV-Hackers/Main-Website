@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/about.css'
+import { Container, Row } from 'reactstrap'
 
 class About extends React.Component {
     constructor(props) {
@@ -8,6 +9,7 @@ class About extends React.Component {
     
     render() {
         return (
+
             <div className="section" id='about'>
                 <div className="title">About Us</div>
                 <div id="body">
