@@ -28,10 +28,10 @@ class Home extends React.Component {
             <NavbarToggler onClick={this.toggle} className="navbar-dark"/>
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav id='nav-items' className='ml-auto' navbar>
-              <NavItem><Scrollchor to='#home' animate={{duration: 50}} className="nav-link">Home</Scrollchor></NavItem>
-              <NavItem><Scrollchor to='#about' animate={{duration: 50}} className="nav-link">About</Scrollchor></NavItem>
-              <NavItem><Scrollchor to='#team' animate={{duration: 50}} className="nav-link">Team</Scrollchor></NavItem>
-              <NavItem><Scrollchor to='#contact' animate={{duration: 50}} className="nav-link">Contact</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#home' animate={{duration: 100}} className="nav-link">Home</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#about' animate={{duration: 100}} className="nav-link">About</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#team' animate={{duration: 100}} className="nav-link">Team</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#contact' animate={{duration: 100}} className="nav-link">Contact</Scrollchor></NavItem>
               <NavItem><NavLink href="https://docs.google.com/document/d/1yOUVi6mwTw6wB9YWs2LWQDxFWilNm3MVE500RU_8Buw/edit?usp=sharing" target="_blank">Meetings</NavLink></NavItem>
             </Nav>
             </Collapse>
