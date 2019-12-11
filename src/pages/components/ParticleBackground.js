@@ -2,16 +2,13 @@ import React from "react";
 import Particles from "react-particles-js";
 
 export default () => (
-  <div
-    style={{
+    <Particles style={{
       position: "fixed",
       top: 0,
       left: 0,
       width: "100%",
       height: "100%",
     }}
-  >
-    <Particles
       params={{
   "particles": {
     "number": {
@@ -63,7 +60,7 @@ export default () => (
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 1,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -118,5 +115,4 @@ export default () => (
   "retina_detect": true
 }}
     />
-  </div>
 );

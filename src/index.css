@@ -5,7 +5,7 @@ body {
     sans-serif, "Comfortaa";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #436b36;
+  background: #819e78;
   scroll-behavior: smooth;
 }
 
@@ -16,19 +16,6 @@ code {
 
 #root {
   z-index: -2;
-}
-
-.jumbotron {
-    max-height: 100vh;
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    z-index: -2;
-    font-size: 1.5em;
-    font-family: monospace;
-    margin-bottom: 0;
 }
 
 /*////navbar////*/
@@ -67,10 +54,20 @@ code {
   flex-grow: .2;
 }
 
-@media (min-width: 1024px) {
-    .section {
-        height: 100vh;
-    }
+.section {
+    padding-bottom: 3vh;
+    height: 100vh;
 }
 
 
+@media (max-width: 1024px) {
+    .section {
+        height: auto;
+    }
+}
+
+@media (max-height: 800px) {
+    .section {
+        height: auto;
+    }
+}

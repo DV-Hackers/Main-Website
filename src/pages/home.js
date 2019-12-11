@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/home.css';
-
+import Scrollchor from 'react-scrollchor'
 import Typed from 'react-typed'
 import Timer from './components/timer'
 import { Jumbotron, Container, Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, NavLink, Fade, Col, Collapse } from 'reactstrap';
@@ -28,11 +28,11 @@ class Home extends React.Component {
             <NavbarToggler onClick={this.toggle} className="navbar-dark"/>
             <Collapse isOpen={this.state.isOpen} navbar>
             <Nav id='nav-items' className='ml-auto' navbar>
-              <NavItem><NavLink href='#home'>Home</NavLink></NavItem>
-              <NavItem><NavLink href='#about'>About</NavLink></NavItem>
-              <NavItem><NavLink href='#team'>Team</NavLink></NavItem>
-              <NavItem><NavLink href='#contact'>Contact</NavLink></NavItem>
-              <NavItem><NavLink href="https://docs.google.com/document/d/1yOUVi6mwTw6wB9YWs2LWQDxFWilNm3MVE500RU_8Buw/edit?usp=sharing">Meetings</NavLink></NavItem>
+              <NavItem><Scrollchor to='#home' className="nav-link">Home</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#about' className="nav-link">About</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#team' className="nav-link">Team</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#contact' className="nav-link">Contact</Scrollchor></NavItem>
+              <NavItem><NavLink href="https://docs.google.com/document/d/1yOUVi6mwTw6wB9YWs2LWQDxFWilNm3MVE500RU_8Buw/edit?usp=sharing" target="_blank">Meetings</NavLink></NavItem>
             </Nav>
             </Collapse>
           </Navbar>
@@ -42,12 +42,12 @@ class Home extends React.Component {
           <Fade id='tagline' in={true} timeout={3500}>Talk is cheap, show us the code.</Fade>
         </Col>
 
-        <Fade in={true} timeout={3500}>
+          {/*<Fade in={true} timeout={3500}>
           <Col id='timer-wrapper' sm={{ size: 'auto' }}>
             <div id='timer-text'>Time until next meeting:&nbsp;</div>
-            <Timer id='timer' day="1" time="1830" date='September 16, 2019 18:30:00 PST' delay='90'/>
+            <Timer id='timer' day="1" time="1830" delay='90'/>
           </Col>
-        </Fade>
+        </Fade>*/}
       </div>
     );
   }

@@ -11,8 +11,8 @@ function App() {
     <>
         <ParticleBackground/>
       <Home to="home"/>
+      <About to="about"/>
       <Team to="team"/>
-      <About to="about"/>    
       <Contact to="contact"/>  
     </>
   );
