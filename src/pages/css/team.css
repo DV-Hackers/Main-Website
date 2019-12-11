@@ -71,6 +71,10 @@
   height: 100%;
 }
 
+.overlay-active {
+  height: 100%;
+}
+
 .overlay-position {
   font-size: 2em;
 }

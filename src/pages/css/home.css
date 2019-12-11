@@ -17,7 +17,8 @@
   height: 10vh;
   margin-top: 40vh;
   color: black;
-  font-size: 2em
+  font-size: 2em;
+  text-align: center;
 }
 
 #tagline {

@@ -3,14 +3,15 @@ import React from 'react'
 export default class Card extends React.Component {
     constructor(props) {
         super(props)
-        this.props = props
+        this.overlay = <Overlay data={this.props.data}/>
+
     }
 
     render() {
         return (
-            <div className='card-container' >
+            <div className='card-container' onClick={this.overlay.toggle}>
                 <img src={this.props.data.img} className='card-img'/>
-                <Overlay data={this.props.data}/>
+                {this.overlay}
             </div>
         )
     }
@@ -19,11 +20,24 @@ export default class Card extends React.Component {
 class Overlay extends React.Component {
     constructor(props) {
         super(props)
+        this.toggle = this.toggle.bind(this)
+        this.state = {
+            class: 'overlay'
+        }
     }
+
+    toggle() {
+        console.log('hi')
+        if (this.state.class == 'overlay')
+            this.setState({class:'overlay active'})
+        else
+            this.setState({class:'overlay'})
+    }
+
 
     render() {
         return (
-            <div className='overlay'>
+            <div className={this.state.class} onClick={this.toggle}>
                 <div className='overlay-position'>{this.props.data['position']}</div>
                 <div className='overlay-name'>{this.props.data['name']}</div>
                 <div className='links'>

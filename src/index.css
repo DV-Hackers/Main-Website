@@ -32,6 +32,10 @@ code {
     flex-direction: column;
     align-items: flex-end;
   }
+
+  .title {
+      font-size: 3em;
+  }
 }
 
 #navbrand {
@@ -52,6 +56,7 @@ code {
   justify-content: center;
   color: black;
   flex-grow: .2;
+  text-align: center;
 }
 
 .section {
