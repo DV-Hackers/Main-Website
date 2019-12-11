@@ -1,9 +1,16 @@
-.contact-bg {
-    width: 100vw;
-    height: 100vh;
-    align-content: center;
-    z-index: -1;
-    font-size: 1.5em;
-    font-family: monospace;
-    color: rgb(163, 163, 163);
+#contact {
+  /*background: #182140*/;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: monospace;
+  height: 100vh;
+}
+
+#contact > .body {
+  z-index: 2;
+  font-size: 2em;
+  color: black;
+  padding-bottom: 5vh;
 }

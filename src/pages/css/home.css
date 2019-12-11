@@ -2,7 +2,6 @@
     /* position: absolute; */
     width: 100vw;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -17,7 +16,7 @@
   align-items: center;
   height: 10vh;
   margin-top: 40vh;
-  color: green;
+  color: black;
   font-size: 2em
 }
 
@@ -33,31 +32,6 @@
   z-index: 1;
   right: 0;
   bottom: 1vh;
-  color: green;
-  font-size: 1.2em;
-}
-
-/*////navbar////*/
-
-#navbar {
-  font-family: monospace;
-  font-size: 1.5em;
-}
-
-#nav-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 35%;
-}
-
-@media (max-width: 1024px) {
-  .navbar-collapse > #nav-items {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-}
-
-#navbrand {
-  height: 7vh;
+  color: black;
+  z-index: 2;
 }

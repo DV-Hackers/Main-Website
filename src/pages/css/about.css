@@ -1,9 +1,46 @@
-.about-bg {
-    width: 100vw;
-    height: 100vh;
-    align-content: center;
-    z-index: -1;
-    font-size: 1.5em;
+#about {
     font-family: monospace;
-    color: rgb(163, 163, 163);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#about > #body {
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    padding-top: 3vh;
+    font-size: 1.5em;
+}
+
+#about > #body > #description {
+    padding-right: 3vw;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    #about > #body {
+        flex-direction: column-reverse;
+    }
+    #about > #body > #description {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1550px) {
+    #about > #body {
+        width: 75%;
+    }
+}
+
+@media (max-width: 678px) {
+    #about > #body > img {
+        width: 90vw;
+    }
 }

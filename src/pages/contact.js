@@ -9,12 +9,9 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contact-bg" id={this.props.to}>
-                <Container>
-                    <Row>
-                        Contact Us
-                    </Row>
-                </Container>
+            <div className="section" id="contact">
+                <div class="title">Contact Us</div>
+                <div class="body">Email our president: <a href='mailto:canxkoz@gmail.com'>canxkoz@gmail.com</a></div>
             </div>
         );
     }
