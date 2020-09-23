@@ -11,7 +11,7 @@ class Contact extends React.Component {
         return (
             <div className="section" id="contact">
                 <div className="title">Contact Us</div>
-                <div className="body">Email our president: <a href='mailto:canxkoz@gmail.com'>canxkoz@gmail.com</a></div>
+                <div className="body">Email our president: <a href='mailto:mardanmahmut@gmail.com'>mardanmahmut@gmail.com</a></div>
             </div>
         );
     }

@@ -57,6 +57,7 @@ code {
   color: black;
   flex-grow: .2;
   text-align: center;
+  margin-top: 150px;
 }
 
 .section {

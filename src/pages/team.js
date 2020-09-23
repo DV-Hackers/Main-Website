@@ -10,15 +10,19 @@ import umidImg from './img/Muradli.jpg'
 import sibbsImg from './img/Lopez.jpg'
 import omarImg from './img/Ahmadieh.jpg'
 import avatarImg from './img/avatar.png'
+import daehoonImg from './img/Kwack.png'
+import daniyalImg from './img/Dianati.png'
+import olenaImg from './img/Buriakova.png'
+import mardanImg from './img/Mahmut.png'
+import rishiImg from './img/Thakkar.png'
+import wonjaeImg from './img/Lee.png'
 
-var members = [{ "name": "Can Koz", "position": "President", "email": "canxkoz@gmail.com", "github": "http://github.com/canxkoz", "linkedin": "https://www.linkedin.com/in/canxkoz/", "img": canImg },
-{ "name": "Andrew Che", "position": "Vice President", "email": "andrew.che0122@gmail.com", "github": "http://github.com/drewche", "linkedin": " https://www.linkedin.com/in/andrew-che-314a55172/", "img": andrewImg },
-{ "name": "Jacob Hanson", "position": "Officer", "email": "jhanreg11@gmail.com", "github": "http://github.com/jhanreg11", "linkedin": "https://www.linkedin.com/in/jacob-h-1746a7117/", "img": jacobImg },
-{ "name": "Jake Nations", "position": "Officer", "email": "jakenations4@gmail.com", "github": "http://github.com/ClassicNations", "linkedin": "https://www.linkedin.com/in/jake-nations-5b9a53136/","img": jakeImg },
-{ "name": "Sebastian Lopez", "position": "Officer", "email": "lopezsebastian856@gmail.com", "github": "http://github.com/SirSebastian", "linkedin": "https://www.linkedin.com/in/sebastian-lopez-5b7733168/", "img": sibbsImg },
-{ "name": "Umid Muradli", "position": "Secretary", "email": "umid.murad@hotmail.com", "github": "https://github.com/umidmurad", "linkedin": "https://www.linkedin.com/in/umid-muradli-a0b22913b", "img": umidImg },
-{ "name": "Omar Ahmadieh", "position": "Officer", "email": "omarelahmadieh@hotmail.com", "img": omarImg },
-{ "name": "Peter Aleman", "position": "Officer", "email": "paleman982@insite.4cd.edu", "img": avatarImg },
+var members = [{ "name": "Mardan Mahmut", "position": "President", "email": "mardanmahmut@gmail.com", "github": "http://github.com/Mardan21", "linkedin": "https://www.linkedin.com/in/mardan-mahmut-840244173/", "img": mardanImg },
+{ "name": "Wonjae Lee", "position": "Vice President", "email": "wonjaelee99@gmail.com", "github": "http://github.com/leewjae", "img": wonjaeImg },
+{ "name": "Olena Buriakova", "position": "ICC Rep", "email": "oburiakova805@insite.4cd.edu", "github": "http://github.com/olenaaa", "linkedin": "https://www.linkedin.com/in/olena-buriakova-65a331194/", "img": olenaImg },
+{ "name": "Daehoon Kwack", "position": "Treasurer", "email": "daehoonkwack@gmail.com", "github": "http://github.com/dkwack4059", "linkedin": "https://www.linkedin.com/in/daehoon-kwack-00b591193/","img": daehoonImg },
+{ "name": "Rishi Thakkar", "position": "Secretary", "email": "rishi.r.thakkar@gmail.com", "linkedin": "https://www.linkedin.com/in/rishi-thakkar-8a95a6157/", "img": rishiImg },
+{ "name": "Daniyal Dianati", "position": "Officer", "email": "ddianati001@insite.4cd.edu", "linkedin": "https://www.linkedin.com/in/daniel-dianati-72bb18154", "img": daniyalImg },
 ]
 
 function MemberList(members) {
@@ -39,9 +43,8 @@ export default class Team extends React.Component {
     return (
       <div className="section" id='team'>
           <Row className='title'>Our Officers</Row>
-          <Row className='row1'>{MemberList(members.slice(0,2))}</Row>
-          <Row className='row2'>{MemberList(members.slice(2,5))}</Row>
-          <Row className='row1'>{MemberList(members.slice(5,8))}</Row>
+          <Row className='row1'>{MemberList(members.slice(0,3))}</Row>
+          <Row className='row2'>{MemberList(members.slice(3,6))}</Row>
       </div>
     )
   }
