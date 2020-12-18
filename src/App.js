@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/home.js'
-import Team from './pages/team.js'
+import Home from './pages/home.js';
+import Team from './pages/team.js';
+import Alumni from './pages/alumni.js';
 import About from './pages/about.js';
 import Contact from './pages/contact.js';
-import ParticleBackground from './pages/components/ParticleBackground.js'
+import ParticleBackground from './pages/components/ParticleBackground.js';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Home to="home"/>
       <About to="about"/>
       <Team to="team"/>
-      <Contact to="contact"/>  
+      <Alumni to="alumni"/>
+      <Contact to="contact"/>
     </>
   );
 }

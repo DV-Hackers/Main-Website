@@ -1,0 +1,99 @@
+#alumni {
+  /*background: #182140*/;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: monospace;
+}
+
+#alumni > .body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+/*/////NEW CARD/////*/
+
+.card-container {
+  margin: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  font-size: .75em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    font-size: .65em;
+  }
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #436b36;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: .8;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container:hover .overlay {
+  height: 100%;
+}
+
+.overlay-active {
+  height: 100%;
+}
+
+.overlay-position {
+  font-size: 2em;
+}
+
+.overlay-name {
+  font-size: 1.5em;
+}
+.overlay-position .overlay-name .links {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}

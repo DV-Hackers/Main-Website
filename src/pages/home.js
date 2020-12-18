@@ -31,6 +31,7 @@ class Home extends React.Component {
               <NavItem><Scrollchor to='#home' animate={{duration: 100}} className="nav-link">Home</Scrollchor></NavItem>
               <NavItem><Scrollchor to='#about' animate={{duration: 100}} className="nav-link">About</Scrollchor></NavItem>
               <NavItem><Scrollchor to='#team' animate={{duration: 100}} className="nav-link">Team</Scrollchor></NavItem>
+              <NavItem><Scrollchor to='#alumni' animate={{duration: 100}} className="nav-link">Alumni</Scrollchor></NavItem>
               <NavItem><Scrollchor to='#contact' animate={{duration: 100}} className="nav-link">Contact</Scrollchor></NavItem>
               <NavItem><NavLink href="https://docs.google.com/document/d/1rTZrvfw7TNExbpqSWoZtazc3EnuwL5oao6uNZ7qhtjQ/edit" target="_blank">Meetings</NavLink></NavItem>
             </Nav>

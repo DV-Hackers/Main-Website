@@ -9,6 +9,16 @@
   text-align: center;
 }
 
+#contact > .title {
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-grow: .2;
+  text-align: center;
+  margin-top: 230px;
+}
+
 #contact > .body {
   z-index: 2;
   font-size: 2em;
