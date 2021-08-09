@@ -6,7 +6,7 @@ import { Container, Jumbotron, Row } from 'reactstrap'
 
 import youssefImg from './img/youssef.jpg'
 import yahyaImg2 from './img/Yahya2.jpg'
-import aliImg from './img/Ali.JPG
+import aliImg from './img/Ali.JPG'
 
 var members = [
 { "name": "Youssef Qteishat", "position": "President", "email": "youssef.qt1@gmail.com", "github": "https://github.com/youssef-qteishat", "linkedin": "https://www.linkedin.com/in/youssef-qteishat-34b05a203", "img": youssefImg },
