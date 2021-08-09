@@ -7,6 +7,7 @@ class Contact extends React.Component {
         super(props);
     }
 
+    
     render() {
         return (
             <div className="section" id="contact">
