@@ -40,7 +40,7 @@ class Home extends React.Component {
 
         <Col id='center-wrapper' sm="12" md={{ size: 6, offset: 3 }}>
           <Typed id='landing-typed' strings={['DVHackers']} typeSpeed={200}></Typed>
-          <Fade id='tagline' in={true} timeout={3500}>Talk is cheap, show us the code.</Fade>
+          <Fade id='tagline' in={true} timeout={3500}>DVC's premier computer science club.</Fade>
         </Col>
 
           {/*<Fade in={true} timeout={3500}>
