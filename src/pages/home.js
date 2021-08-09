@@ -43,12 +43,14 @@ class Home extends React.Component {
           <Fade id='tagline' in={true} timeout={3500}>DVC's premier computer science club.</Fade>
         </Col>
 
-          {/*<Fade in={true} timeout={3500}>
+          //{
+            /*<Fade in={true} timeout={3500}>
           <Col id='timer-wrapper' sm={{ size: 'auto' }}>
             <div id='timer-text'>Time until next meeting:&nbsp;</div>
             <Timer id='timer' day="1" time="1830" delay='90'/>
           </Col>
-        </Fade>*/}
+        </Fade>*/
+//}
       </div>
     );
   }
