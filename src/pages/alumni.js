@@ -2,6 +2,8 @@ import React from 'react';
 import './css/alumni.css'
 import Card from './components/card'
 import { Container, Jumbotron, Row } from 'reactstrap'
+
+// 2019-2020
 import jacobImg from './img/Hanson.jpg'
 import canImg from './img/Koz.jpg'
 import andrewImg from './img/Che.jpg'
@@ -10,6 +12,8 @@ import umidImg from './img/Muradli.jpg'
 import sebastianImg from './img/Lopez.jpg'
 import omarImg from './img/Ahmadieh.jpg'
 import avatarImg from './img/avatar.png'
+
+//2020-2021
 import mardanImg from './img/Mahmut.png'
 import daehoonImg from './img/Kwack.png'
 import daniyalImg from './img/Dianati.png'
