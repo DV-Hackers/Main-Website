@@ -34,8 +34,9 @@ export default class Team extends React.Component {
     return (
       <div className="section" id='team'>
           <Row className='title'>Our Officers</Row>
-          <Row className='row1'>{MemberList(members.slice(0,3))}</Row>
+          <Row className='row1'>{MemberList(members.slice(0,4))}</Row>
       </div>
+
     )
   }
 }
