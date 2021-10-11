@@ -13,7 +13,7 @@ var members = [
 { "name": "Youssef Qteishat", "position": "President", "email": "youssef.qt1@gmail.com", "github": "https://github.com/youssef-qteishat", "linkedin": "https://www.linkedin.com/in/youssef-qteishat-34b05a203", "img": youssefImg },
 { "name": "Ali Tout", "position": "Vice President", "email": "at4882@gmail.com", "github": "https://github.com/Creater2036", "linkedin": " https://www.linkedin.com/in/ali-tout-0067961ba", "img": aliImg },
 { "name": "Lycia Yousfi", "position": "Secretary", "email": "lyciayousfi@gmail.com", "linkedin": "https://www.linkedin.com/in/lycia-yousfi-1299356a","img": lyciaImg },
-{ "name": "Yahya Qʈeishat", "position": "Secretary", "email": "yahya.qteishat@gmail.com", "github": "https://github.com/yahya-s9","img": yahyaImg2 }
+{ "name": "Yahya Qʈeishat", "position": "ICC Representative", "email": "yahya.qteishat@gmail.com", "github": "https://github.com/yahya-s9","img": yahyaImg2 }
 ]
 
 function MemberList(members) {
