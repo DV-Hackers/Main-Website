@@ -14,7 +14,7 @@ class About extends React.Component {
                 <div className="title">About Us</div>
                 <div id="body">
                     <div id="description">DVHackers is a Computer Science club at Diablo Valley College that focuses on practicing SWE interview questions, solving competitive programming problems, and building cool projects! We were founded in Fall of 2019 and have over 30 members. All DVC students, no matter your skill level, are welcome to join! Meetings restart
-in Fall 2022.</div>
+in Fall 2021.</div>
                     <img src={require("./img/group-picture.jpeg")}/>
                 </div>
             </div>
